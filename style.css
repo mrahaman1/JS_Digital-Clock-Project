@@ -1,8 +1,8 @@
     #main_container{
         background-color: #3D087B;
         display: flex;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         padding: 20px;
     }
 
@@ -120,10 +120,12 @@
     }
 
     .b1{
-        width: 70%;
-        height: 100px;
+        width: 72%;
+        height: 90px;
         background-color: white;
-        border-radius: 10px;   
+        border-radius: 10px; 
+        display: flex;  
+        padding-bottom: 20px;
     }
 
     .b2{
@@ -153,7 +155,7 @@
         text-align: center;
         vertical-align: middle;
         height: 50px;
-        width: 60px;
+        width: 10%;
         border-radius: 3px;
         display: inline-block;
         background-color: #f2b1f9;
@@ -165,13 +167,14 @@
         top: 15px;
         padding: 5px;
         padding-top: 15px;
+        margin:auto;
     }
 
     #hr{
         text-align: center;
         vertical-align: middle;
         height: 50px;
-        width: 50px;
+        width: 10%;
         border-radius: 3px;
         display: inline-block;
         background-color: #F6E2FF;
@@ -181,14 +184,14 @@
         z-index: 1;
         top: 15px;
         padding: 10px;
-        margin-left: -1px;
+        margin:auto;
     }
 
     #min{
         text-align: center;
         vertical-align: middle;
         height: 50px;
-        width: 50px;
+        width: 10%;
         border-radius: 3px;
         display: inline-block;
         background-color: #F6E2FF;
@@ -198,14 +201,14 @@
         z-index: 1;
         top: 15px;
         padding: 10px;
-        margin-left: -5px;
+        margin:auto;
     }
 
     #sec{
         text-align: center;
         vertical-align: middle;
         height: 50px;
-        width: 50px;
+        width: 10%;
         border-radius: 3px;
         display: inline-block;
         background-color: #F6E2FF;
@@ -215,7 +218,7 @@
         z-index: 1;
         top: 15px;
         padding: 10px;
-        margin-left: -5px;
+        margin:auto;
     }
 
     .colon{
@@ -223,14 +226,14 @@
         position: relative;
         z-index: 1;
         top: 17px;
-        margin-left: -5px;
+        margin:auto;
     }
 
     #ap{
         text-align: center;
         vertical-align: middle;
         height: 50px;
-        width: 70px;
+        width: 10%;
         border-radius: 3px;
         display: inline-block;
         background-color: #CB52F8;
@@ -240,7 +243,7 @@
         z-index: 1;
         top: 15px;
         padding-top: 20px;
-        margin-left: 6px;
+        margin:auto;
     }
 
     #pos{
@@ -485,6 +488,22 @@
             background-size: contain;
         }
     
+    }
+
+    @media only screen and (min-width:1081px) and (max-width:1400px){
+        #time_box{
+            height: auto;
+            width: 80%;
+            margin: auto;
+        }
+
+        #left-pop-msg{
+            width: 80%;
+            height: auto; 
+            margin: auto; 
+        }
+
+       
     }
 
 
