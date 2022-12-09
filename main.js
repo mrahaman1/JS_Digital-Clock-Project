@@ -69,26 +69,29 @@
         
         if(wt== hour1){
 
-            document.getElementById("image-select").style.backgroundImage= "url(./aset/night.png)";
-            document.getElementById("left-pop-msg").innerHTML="GOOD NIGHT !!";
-
-           
+            document.getElementById("image-select").style.backgroundImage= "url(./aset/morning.png)";
+            document.getElementById("left-pop-msg").innerHTML="GOOD MORNING!! WAKE UP !!";
+        //     document.getElementById("right-pop-msg").innerHTML="GRAB SOME HEALTHY BREAKFAST!!!";
         }
         else if(lt==hour1){
             document.getElementById("image-select").style.backgroundImage= "url(./aset/lunch.png)";
             document.getElementById("left-pop-msg").innerHTML="GOOD AFTERNOON !! TAKE SOME SLEEP";
+            // document.getElementById("right-pop-msg").innerHTML="LET'S HAVE SOME LUNCH !!";
         }
         else if(nt==hour1){
             document.getElementById("image-select").style.backgroundImage= "url(./aset/evening.png)";
             document.getElementById("left-pop-msg").innerHTML="GOOD EVENING !!";
+            // document.getElementById("right-pop-msg").innerHTML="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
         }
         else if(nit==hour1){
-            document.getElementById("image-select").style.backgroundImage= "url(./aset/morning.png)";
-            document.getElementById("left-pop-msg").innerHTML="GOOD MORNING!! WAKE UP !!";
+            document.getElementById("image-select").style.backgroundImage= "url(./aset/night.png)";
+            document.getElementById("left-pop-msg").innerHTML="GOOD NIGHT !!";
+            // document.getElementById("right-pop-msg").innerHTML="CLOSE YOUR EYES AND GO TO SLEEP";
         }
         else{
             document.getElementById("image-select").style.backgroundImage= "url(./aset/wellcome.jpg)";
             document.getElementById("left-pop-msg").innerHTML=" WELL COME !! DIGITAL CLOCK !!";
+            // document.getElementById("right-pop-msg").innerHTML=" HAVE A GOOD DAY !!";
         }
 
         valuediv1()
@@ -100,24 +103,24 @@
       
         
     
-    function popMsg2(){
-        var newtime = new Date();
-        var hour2 = newtime.getHours();
-        console.log(hour2);
+     function popMsg2(){
+         var newtime = new Date();
+         var hour2 = newtime.getHours();
+         console.log(hour2);
     
-        if(hour2>=4 && hour2<12){
-            document.getElementById("right-pop-msg").innerHTML="GRAB SOME HEALTHY BREAKFAST!!!";
-        }
-        else if(hour2>=12 && hour2<16){
-            document.getElementById("right-pop-msg").innerHTML="LET'S HAVE SOME LUNCH !!";
-        }
-        else if(hour2>=16 && hour2<20){
-            document.getElementById("right-pop-msg").innerHTML="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-        }
-        else if(hour2>=20 || hour2<4){
-            document.getElementById("right-pop-msg").innerHTML="CLOSE YOUR EYES AND GO TO SLEEP";
-        }
+         if(hour2>=4 && hour2<12){
+             document.getElementById("right-pop-msg").innerHTML="GRAB SOME HEALTHY BREAKFAST!!!";
+         }
+         else if(hour2>=12 && hour2<16){
+             document.getElementById("right-pop-msg").innerHTML="LET'S HAVE SOME LUNCH !!";
+         }
+         else if(hour2>=16 && hour2<22){
+             document.getElementById("right-pop-msg").innerHTML="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+         }
+         else if(hour2>=22 || hour2<4){
+             document.getElementById("right-pop-msg").innerHTML="CLOSE YOUR EYES AND GO TO SLEEP";
+         }
     
-    }
+     }
 
-    popMsg2();
+     popMsg2();
