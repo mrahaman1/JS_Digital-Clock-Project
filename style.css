@@ -296,6 +296,8 @@
             width: 70%;
             justify-items: center;
             margin: auto;
+            margin: auto;
+            margin-top: 150px;
         }
 
         #GridContainer{
@@ -373,6 +375,13 @@
             width: 80%;
             margin: auto;
             background-size: contain;
+        }
+
+        #sub_cont{
+            position: absolute;
+            top: 150px;
+            width: 90%;
+            margin: auto;
         }
     
     }
@@ -409,6 +418,7 @@
             width: 70%;
             justify-items: center;
             margin: auto;
+            margin-top: 250px;
         }
 
         #GridContainer{
@@ -487,6 +497,14 @@
             margin: auto;
             background-size: contain;
         }
+
+        #sub_cont{
+            position: absolute;
+            top: 150px;
+            width: 90%;
+            margin: auto;
+        }
+       
     
     }
 
