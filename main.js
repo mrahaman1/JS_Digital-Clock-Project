@@ -69,8 +69,10 @@
         
         if(wt== hour1){
 
-            document.getElementById("image-select").style.backgroundImage= "url(./aset/morning.png)";
-            document.getElementById("left-pop-msg").innerHTML="GOOD MORNING!! WAKE UP !!";
+            document.getElementById("image-select").style.backgroundImage= "url(./aset/night.png)";
+            document.getElementById("left-pop-msg").innerHTML="GOOD NIGHT !!";
+
+           
         }
         else if(lt==hour1){
             document.getElementById("image-select").style.backgroundImage= "url(./aset/lunch.png)";
@@ -81,8 +83,8 @@
             document.getElementById("left-pop-msg").innerHTML="GOOD EVENING !!";
         }
         else if(nit==hour1){
-            document.getElementById("image-select").style.backgroundImage= "url(./aset/night.png)";
-            document.getElementById("left-pop-msg").innerHTML="GOOD NIGHT !!";
+            document.getElementById("image-select").style.backgroundImage= "url(./aset/morning.png)";
+            document.getElementById("left-pop-msg").innerHTML="GOOD MORNING!! WAKE UP !!";
         }
         else{
             document.getElementById("image-select").style.backgroundImage= "url(./aset/wellcome.jpg)";
